@@ -1,0 +1,26 @@
+@charset 'utf-8';
+
+/* reset */
+head,body,h1~h6,header,footer,div,ul,li,a,table{
+    margin:0;padding:0;
+}
+
+
+body{width:1200px;height:1900px;margin:auto;}
+
+
+#header{width:817px;height:36px;background-color:powderblue; margin:auto;}
+
+#logo{width:817px;height:96px;;margin:auto;}
+#logo > h1{text-align:center; font:bold 24px/20px "나눔고딕","arial"; padding-top:45px;}
+#Category1{width:1200px;height:61px;border:1px solid #000;}
+
+#Mainvisual{width:1200px;height:432px;background:url(../../메인/images/센트클로-메인페이지_02-07.jpg)}
+
+#Notice{width:817px;height:166px;margin:auto;background-color:lawngreen;}
+
+#Best{width:817px;height:499px;background-color:yellow; margin:auto;}
+
+#Category{width:817px;height:465px;background-color:powderblue;margin:auto;margin-top:31px;}
+
+#footer{width:817px;height:189px;background-color:palegreen;margin:auto;margin-top:142px;}

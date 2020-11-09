@@ -1,0 +1,566 @@
+@charset 'utf-8';
+ 
+/* reset */
+*{
+    margin:0;padding:0;
+}
+
+ul{list-style:none;;}
+
+li,a{text-decoration:none;}
+ 
+
+body{
+    margin:auto;
+    width:auto;height:14000px;
+}
+
+/* header 부분 */
+#header {
+    width:1200px;height:36px;margin:auto;
+}
+#header :hover{
+    color:#c0c0c0;
+}
+#header > a {
+    padding:12px;
+    color:#000000;
+}
+#header > #login {
+    display:inline;
+    float:right;
+    padding-right:12px;
+}
+#header > #login a{
+    color:#000;
+}
+#header > #login :hover{
+    color: #c0c0c0; 
+}
+ 
+/* logo 부분 */
+#logo {
+    padding-top:12px;
+    padding-bottom:42px;
+    text-align:center;
+}
+#logo {
+    font:18px/50px arial;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* 카테고리부분 */
+
+.border{
+    width:2000px;height:60px;margin:auto;
+    border:1px solid #000;
+}
+
+.border > #Category1{
+    width:1200px;height:60px;margin:auto;
+    text-align:center;
+    padding:18px;
+    font:bold 18px/24px arial;
+}
+.border > #Category1 > p {
+    display:inline;
+    color:rgb(148, 148, 148);
+    font:14px/14px arial;
+}
+.border > #Category1 > a {
+    padding:65px;
+    color:#000;
+}
+.border > #Category1 > a:hover{
+     color:#c0c0c0;
+}
+
+/* 상품 이미지설명 */
+/* left */
+.Mainvisual{
+    width:1200px;height:680px;margin:auto;
+}
+.Mainvisual > #left{
+    width:400px;height:650px;
+    float:left;
+}
+#left > p:nth-child(1){
+    border:1px solid #000;
+    position: relative;
+    left:26px;
+    top:25px;
+    width:340px;height:500px;
+    background:url(../images/img/sub/sub_images/센트클로--상품_03.jpg) no-repeat;
+    background-size:500px;
+}
+#left > p:nth-child(2){
+    width:67px;height:92px;margin:auto;
+    position: relative;
+    font:bold 14px/32px arial;
+    text-align: center;
+    top:35px;
+    left:25px;
+    border:1px solid #000;
+    float:left;
+}
+ /* 사진 */
+ .left2{
+     width:280px;height:90px;
+     border:2px solid #000;
+     position: relative;
+     top:35px;
+     left:-24px;
+     float:right;
+ }
+.left2 > h1 {
+    font:bold 12px/25px arial;
+    text-align:center;
+}
+.left2 > p{
+     width:240px;height:14px;
+     display:inline;
+     padding:18px;
+     position: relative;
+     top:18px;
+     left:35px;
+     border:2px solid #000;
+}
+.left2 > p:nth-child(2){
+   background-color: red;
+   background:url(../images/sub/images/센트클로--상품_05.jpg) no-repeat;
+}
+.left2 > p:nth-child(3){
+    background-color: red;
+    background:url(../images/sub/images/센트클로--상품_07.jpg) no-repeat;
+ }
+ .left2 > p:nth-child(4){
+    background-color: red;
+    background:url(../images/sub/images/센트클로--상품_09.jpg) no-repeat;
+ }
+ .left2 > p:nth-child(5){
+    background-color: red;
+    background:url(../images/sub/images/센트클로--상품_11.jpg) no-repeat;
+ }
+ 
+/* 상품 가격 */
+/* right */
+.Mainvisual > #right{
+    width:468px;height:360px;margin:auto;
+    position: relative;
+    top:30px;
+    left:50px;
+}
+
+#title{
+    border-bottom:3px solid #000;
+    padding-top:1px;
+    font:10px/24px arial;
+}
+#title p{
+    font:bold 14px/30px arial;
+    display: inline;
+    border:2px solid #000;
+}
+#title p:nth-child(2){
+    background-color:pink;
+    color:blue;
+}
+#title p:nth-child(3){
+    background-color:brown;
+    color:white;
+}
+/* 선택 */
+#pay{
+    width:468px;
+    height:280px;
+    border-bottom:2px solid #000;
+    font:bold 14px/30px arial;
+}
+#pay table{ 
+    width:400px;
+    height:10px;
+    padding:-15px; 
+}
+#pay table td{
+    padding-top:10px;
+}
+#pay table tr:nth-child(3)>th{
+    border:1px solid #000;
+    background-color:greenyellow;
+}
+#pay table tr:nth-child(4)>th{
+    border:1px solid #000;
+    
+}
+.checkbox{
+    position: relative;
+    width:90px;
+    height:40px;
+    top:215px;
+    border:1px solid rgb(158, 158, 158);
+    background-color:#fff;
+    left:100px;
+}
+ 
+#pay table tr:nth-child(5)>th{
+    padding:12px;}
+
+/* 구매하기 */
+.buybutton{
+    position: relative;
+    top:12px;
+    width:80px;height:33px;
+    background-color:gray;
+    display:inline;
+    width:90px;height:43px;
+}
+.AddCart{
+    position: relative;
+    top:12px;
+    right:8px;
+   
+    width:90px;height:43px;
+}
+.total{
+    font: bold 18px/34px arial;
+    float:right;
+    padding-top:1px;
+}
+.total h1{
+    display:inline;
+    font:bold 18px/60px arial;
+    padding-top:20px;
+}
+.total p{
+    display:inline;
+}
+
+/* 상품설명1 */
+.menu{
+    width:1200px;height:80px;margin:auto;
+     
+}
+.menu ul {
+    position: relative;
+    top:10px;
+}
+.menu ul li{
+    display:inline;
+    font:bold 16px/10px arial;
+    padding:20px;
+}
+.menu ul li a{
+ 
+    padding:90px;
+}
+.menu ul li:nth-child(1){
+    width:100px;height:100px;
+    background-color:rgb(65, 65, 65); 
+}
+.menu ul li:nth-child(1)>a{
+    color:white;
+}
+.menu ul li:nth-child(2){
+    width:100px;height:100px;
+    background-color:rgb(255, 255, 255);
+    border:1px solid #000;
+    color:blue;
+}
+.menu ul li:nth-child(2)>a{
+    color:#c0c0c0;
+}
+ 
+.menu ul li:nth-child(3){
+    width:100px;height:100px;
+    background-color:#fff;
+    border:1px solid #000;
+    color:#c0c0c0;
+}
+.menu ul li:nth-child(3)>a{
+    color:#c0c0c0;
+}
+ 
+.menu ul li:nth-child(4){
+    width:100px;height:100px;
+    background-color:#fff;
+    border:1px solid #000;
+}
+.menu ul li:nth-child(4)>a{
+    color:#c0c0c0;
+}
+/* 마우스 */
+.menu ul li:hover{
+    background-color:black;
+}
+/* 상품 이미지 1 */
+
+#one{
+    width:850px;height:185px;margin:auto;
+    text-align: center;;
+}
+#two{
+    width:850px;height:185px;margin:auto;
+    text-align: center;;
+}
+#three{
+    width:850px;height:185px;margin:auto;
+    text-align: center;
+}
+table{
+    width:661px;height:230px;margin:auto;
+ 
+}
+table th{
+    border:1px solid #000;
+}
+
+/* 상품 이미지2 */
+.image1{
+        width:1200px;height:961px;margin:auto;
+}
+.image1>h1{
+      width:656px;height:860px;margin:auto;
+      background:url(../images/sub/images/상품사진1.jpg);
+}
+.image2{
+    width:1200px;height:996px;margin:auto;
+}
+.image2>h1{
+     width:651px;height:821px;margin:auto;
+     background:url(../images/sub/images/상품사진2.jpg);
+}
+
+/* 상품 이미지3 */
+.image3{
+    width:1200px;height:1120px;margin:auto;
+}
+.image3>h1{
+    width:651px;height:956px;margin:auto;
+    background:url(../images/sub/images/상품사진3.jpg);
+}
+
+
+
+/* 상품 이미지4 */
+.image4{
+    width:1200px;height:836px;margin:auto;
+}
+.image4>h1{
+    width:669px;height:775px;margin:auto;
+    background:url(../images/sub/images/상품사진4.jpg);
+}
+
+/* 상품소재 및 상품평 */
+.review{
+    width:1200px;height:1200px;margin:auto;
+}
+.review h1{
+    text-align:center;
+    font:bold 18px/20px arial;
+    padding:25px;
+}
+.review table{
+    border:2px solid #000;
+    background-color:#fff;
+}
+.review table tr {
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+}
+.review table tr th{
+    background-color:#c0c0c0;
+    border-bottom:1px solid #000;
+    color:#000;
+}
+ 
+/* 구매후기 */
+.buyreview{
+    width:651px;height:620px;margin:auto;
+}
+.buyreview h1{
+    border-bottom:1px solid #000;
+    text-align: left;
+}
+.buyreview p{
+    font:bold 14px/16px arial;
+    padding:18px;
+}
+.buyreview p:nth-child(3){
+    border-bottom:1px solid #000;
+}
+.input{
+    width:140px;height:77px;margin:auto;
+    background-color:#c0c0c0;
+    float: right;
+    position: relative;
+    bottom:90px;
+    right:20px;
+}
+.Score{
+    position: relative;
+    bottom:450px;
+    right:270px;
+}
+.Score p{
+    position: relative;
+    bottom:45px;
+    left:740px;
+}
+.Size h1{
+    position: relative;
+    bottom:490px;
+    right:270px;
+}
+.Size p{
+    position: relative;
+    padding:15px;
+    bottom:500px;
+    left:290px;
+}
+.Size #small{
+    background-color:rgb(151, 151, 151);
+    position: relative;
+    bottom:535px;
+    left:360px;
+}
+ 
+/* 컬러 */
+.Color{
+    position: relative;
+    bottom:450px;
+    right:270px;
+}
+.Color p{
+    position: relative;
+    bottom:45px;
+    left:860px;
+}
+.Color h1{
+    position: relative;
+    bottom:285px;
+    left:300px;
+}
+.Color p{
+    position: relative;
+    padding:22px;
+    bottom:304px;
+    right:20px;
+}
+/* Q&A */
+.Qa{
+    text-align: center;
+    margin:auto;
+    position: relative;
+    bottom:600px;
+    right:280px;
+   
+}
+.Qa p{
+    margin:auto;
+    position: relative;
+    padding:12px;
+    left:540px;
+    text-align: left;
+    font:bold 11px/14px arial;
+}
+.edit{
+    width:100px;height:43px;float:right;
+    position: relative;
+    bottom:70px;
+    left:60px;
+}
+ 
+/* 다른상품  보기*/
+.next{
+    width:1200px;height:397px;margin:auto;
+    position: relative;
+    top:-550px;
+}
+.next p{
+    text-align:center;
+}
+.next a{
+    text-align:center;
+    position: relative;
+    border:1px solid #000;
+    top:170px;
+    left:150px;
+    padding:110px;
+}
+.next a:nth-child(1){
+    background: url(../images/sub2/images/센트클로--상품_03.jpg) no-repeat;
+    background-size: 1px;
+}
+/* 배송안내 취소안내 */
+.cancle{
+    width:850px;height:1600px;margin:auto;
+    position: relative;
+    top:-500px;
+    border:1px solid #000;
+}
+.cancle h1{
+text-align:left;
+border-bottom:1px solid #000;
+text-align:left;
+position: relative;
+}
+
+
+/* 하단 */
+/* footerbar */
+.footerbar{
+    width:1900px;height:300px;margin:auto; 
+    background-color:#c0c0c0;
+    float:left;
+    position: relative;
+    right:400px;
+}
+.footerbar > #footer{
+    width:600px;height:250px;margin:auto;
+    float:left;
+    font:bold 12px/28px arial;
+    position: relative;
+    top:10px;left:300px;
+}
+/* footer2  */
+.footerbar > .footer2 > h1{padding-bottom:18px;font:20px/16px arial;}
+
+.footerbar > .footer2 {
+    float:left;
+    font:bold 14px/38px arial;
+    position: relative;
+    top:10px;left:400px;
+}
+.footerbar > .footer2> a{color:#000;}
+.footerbar > .footer2> a:hover{color:gray;}
+/* footer2 end  */
+
+
+/* footer3  */
+.footerbar > .footer3{
+    float:left;
+    position: relative;
+    font:bold 14px/38px arial;
+    top:44px;left:420px; 
+}
+.footerbar > .footer3> a{color:#000;}
+.footerbar > .footer3> a:hover{color:gray;}
+/* footer 3 end  */
+
+/* footer4 */
+
+.footerbar > .footer4{
+    float:left;
+    position: relative;
+    font:bold 14px/40px arial;
+    top:10px;left:500px;
+}
+
+.footerbar > .footer4 > a{
+    color:white;
+    background-color:#000;
+    border:20px solid #000;
+    position: fixed;
+    top:800px;right:90px;
+}
+ 
