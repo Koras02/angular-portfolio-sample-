@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <script>
+        var user_heigh = prompt('키는?','숫자만 입력');
+        var user_weight = prompt('몸무게는?','숫자만 입력');
+
+        // 적정 몸무게 = (신장-100)*0.9
+        var total = (user_heigh-100)*0.9; 
+        var result = (user_weight>=total)?('적정 몸무게 이상'):('적정 몸무게 미달');  
+
+        document.write('적정 몸무게는 '+total+'이며 당신은 '+ result +' 입니다.');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
