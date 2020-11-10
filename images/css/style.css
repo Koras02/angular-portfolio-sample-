@@ -1,0 +1,29 @@
+@charset 'utf-8';
+
+/* reset */
+head,body,h1~h6,header,footer,div,ul,li,a,table{
+    margin:0;padding:0;
+}
+
+body{width:1200px;height:1900px;margin:auto;}
+#header{
+    width:817px;height:36px;margin:auto;
+   
+}
+
+#header2 > h1 {
+    width:98px;height:39px;margin:auto;
+    margin-top:44px;
+}
+
+#category > ul{
+    list-style:none;
+    border:1px solid #000;
+    width:1200px;height:58px;margin:auto;
+}
+#category > ul > li{
+margin:auto;
+display:inline-block;
+}
+ 
+ 
