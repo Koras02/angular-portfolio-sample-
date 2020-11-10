@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+*{margin:0;padding:0;}
+
+a{text-decoration: none;}
+ul,li{list-style:none;}
+
+
+.header{
+    width:1900px;height:150px; 
+    color:black;
+    border:1px solid #000;
+}
+.header #bar{
+    width:1200px;height:150px;margin:auto;
+    background-color: #fff;
+}
+.header #right{
+    float:right;
+    font:bold 12px/24px arial;
+    padding:18px;
+    color:#000;
+ 
+}
+.header #category{
+    font:bold 16px/55px arial;
+    text-align: center;
+    float:left;
+}
+.header #category a{
+    position: relative;
+    color:black;
+    top:10px;
+    padding:63px;
+    text-align: center;
+}
+.header #category a:hover{
+    color:chartreuse;
+}
+.header #category a:nth-child(4){
+    background:url(../img/메인페이지/header.jpg) no-repeat -0px 40px;
+    padding:80px;
+    background-size: 160px;
+}
+/* 끝 */
+.Mainvisual{
+    width:1900px;height:600px; 
+    border:1px solid #000;
+    background:url(../img/메인페이지/나뚜루-메인페이지_02.jpg)
+}
+.Mainvisual button{
+    width:167px;height:55px;
+    position: relative;
+    top:55%;
+    left:47%;
+    background-color:#fff;
+    border-radius: 25%;
+}
+.Mainvisual button a{
+    color:#000;
+    font:bold 14px/20px arial;
+}
+.Mainvisual button a:hover{
+    color:red;
+}
+
+/* 간편주문 */
+.claa{
+    width:1120px;height:332px;margin:auto;
+    border:1px solid #000;
+}
+.claa h1{
+    text-align: center;
+    font:bold 18px/24px arial;
+    padding-top:20px;
+}
+.claa #phone{
+    width:430px;height:240px; 
+    border:1px solid #000;
+    position: relative;
+    top:40px;
+    border-radius: 15%;
+}
+.claa #phone a{
+    display:inline;
+    position: relative;
+    top:70px;
+    padding:60px;
+}
+.claa #phone a:nth-child(1){
+    background:url(../img/메인페이지/배민.jpg) no-repeat;
+    position: relative;
+    left:30px;
+    top:90px;
+}
+.claa #phone a:nth-child(2){
+    position: relative;
+    left:30%;
+    top:100px;
+    background:url(../img/메인페이지/요기요.jpg) no-repeat;
+    position: relative;
+    background-size:100%;
+    
+
+}
+.claa #phone p{
+    font:bold 17px/25px  arial;
+    position: relative;
+    top:30%;
+    padding:55px;
+    float:left;
+}
+ 
+ 
