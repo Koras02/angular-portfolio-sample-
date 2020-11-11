@@ -309,7 +309,30 @@ body{
     width:1200px;height:1950px;margin:auto;
     border:1px solid #000;
 }
-
+#one h1{
+    text-align: center;
+    font:bold 18px/14px arial;
+    padding:50px;
+}
+#one p{
+    text-align: center;
+    font:bold 16px/24px arial;
+    padding:4px;
+    position: relative;
+    bottom:30px;
+}
+#two h1{
+    text-align: center;
+    font:bold 18px/16px arial;
+    padding:20px;
+}
+#two p{
+    text-align: center;
+    font:bold 16px/24px arial;
+    padding:4px;
+    position: relative;
+    bottom:15px;
+}
 /* 상품 이미지2 */
 .image1{
     width:1200px;height:4000px;margin:auto;
