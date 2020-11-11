@@ -38,18 +38,22 @@
     <!-- 상품 이미지 설명창 -->
 <div class="Mainvisual">
  <div id="left">
-     <p>이미지</p> 
-     <p>리뷰평점 4.8</p> 
-     <div class="left2">
-     <h1>베스트 리뷰</h1>
-     <p><a href="#"></a></p>
-     <p><a href="#"></a></p>
-     <p><a href="#"></a></p>
-     <p><a href="#"></a></p>
-    </div>
-    </div>
-    <div id="right">
-  <div id="title">
+     <p></p>
+     <div id="left2">
+         <h1>베스트 리뷰</h1>
+         <a href="#">1</a>
+         <a href="#">2</a>
+         <a href="#">3</a>
+         <a href="#">4</a>
+         <a href="#">5</a>
+        </div>
+        <div id="left1"> 
+        <h1>리뷰 평점</h1>
+         <p>4.8</p>
+        </div>
+       </div>
+<div class="right">
+    <div id="title">
     <h1>[Popping Mellow] 그린 지수 아이스크림 반팔 티셔츠_CTSRB70TPE M-XL(95~105)</h1>
     <p>주문폭주</p>
     <p>당일배송</p>
@@ -77,27 +81,33 @@
         <tr>
             <td>
                 <td>사이즈</td>
-                <th>M(95~100)</th>
+                <!-- <th>M(95~100)</th>
                 <th>L(105~110</th>
-                <th>XL(110~)</th>
+                <th>XL(110~)</th> -->
             </td>
         </tr>
         <tr>
             <td>
                 <td>배송정보</td>
-                <input type="button" class="checkbox" value="실시간 재고">
             </td>
         </tr>
     </table>
+    <input type="submit" name="size" id="size" value="M(95~100)" checked="checked">
+    <input type="submit" name="size" id="size" value="L(105~110)">
+    <input type="submit" name="size" id="size" value="M(115~120)">
+    <input type="submit" class="checkbox" id="checkbox" value="실시간 재고">
+    <input type="submit" name="color" id="color" value="">
+  <div class="buybutton"> 
+    <input type="submit" id="buybutton" value="구매하기">
+    <input type="submit" id="AddCart" value="장바구니">
+    <div class="total">
+        <h1>총 상품금액</h1>
+        <p>	<i style='font-size:12px' class='fas'>&#xf159;</i>
+            27,500 원</p>
+        </div>
+    </div>  
 </div>
-<input type="button" class="buybutton" value="구매하기">
-<input type="button" class="AddCart" value="장바구니">
-<div class="total">
-    <h1>총 상품금액</h1>
-    <p>	<i style='font-size:18px' class='fas'>&#xf159;</i>
-        27,500 원</p>
-    </div>
-</div>  
+</div>
  
 <!-- 상품설명1 -->
 <div class="menu">
@@ -155,60 +165,67 @@
               <th>도톰</th>
           </td>
       </tr>
-  </table>
-</div>
-<!-- 상품 이미지 1 -->
-<div class="image1">
-    <h1>1</h1>
-</div>
-<!-- 상품이미지2 -->
-<div class="image2">
-    <h1>2</h1>
-    <h1>상품정보</h1>
-    <table>
-      <form>
-          <tr>
-              <th>품번</th>
-              <td>CTSRB70TPE</td>
-              <th>제조년월</th>
-              <td>2020-02</td>
-          </tr>
-          <tr>
-              <th>색상</th>
-              <td>그린</td>
-              <th>제조국</th>
-              <td>대한민국</td>
-          </tr>
-          <tr>
-              <th>소재</th>
-              <td>면100</td>
-              <th>제조업자명/수입업자명</th>
-              <td>(주)에스엔지글로벌</td>
-          </tr>
-          <tr>
-              <th>세탁방법</th>
-              <td>손세탁</td>
-              <th>판매자명</th>
-              <td>에스티오</td>
-          </tr> 
-      </form>
     </table>
 </div>
+    <!-- 상품 이미지 1 -->
+    <div class="image1">
+        <h1>1</h1>
+    </div>
+</div>
+    <div class="image2">
+        <h1>2</h1>
+        <h1>상품정보</h1>
+        <table>
+            <form>
+                <tr>
+                    <th>품번</th>
+                    <td>CTSRB70TPE</td>
+                    <th>제조년월</th>
+                    <td>2020-02</td>
+                </tr>
+                <tr>
+                    <th>색상</th>
+                    <td>그린</td>
+                    <th>제조국</th>
+                    <td>대한민국</td>
+                </tr>
+                <tr>
+                    <th>소재</th>
+                          <td>면100</td>
+                          <th>제조업자명/수입업자명</th>
+                          <td>(주)에스엔지글로벌</td>
+                        </tr>
+                        <tr>
+                            <th>세탁방법</th>
+                            <td>손세탁</td>
+                            <th>판매자명</th>
+                            <td>에스티오</td>
+                        </tr> 
+                    </form>
+                </table>
+                <h1>구매후기</h1>
+                <p>-구매후기 작성시 구매금액 2%로가 마일리지로 적립됩니다.</p>
+                <p>-사진첨부는 선택사항입니다.</p>
+                </div>
+            </div>
+            </div>
+</div>
+</div>
+</div>
+</div>
+<div class="e"> 
+    <div id="Recomantion"></div>
+  <h1>Recomantion</h1>    
+  <div id="R"></div>
+    <h1>배송안내</h1>
+</div>
+<!-- 상품이미지2 -->
 <!-- 상품이미지3 -->
- 
 <!-- 상품소재 및 삼품평 -->
-  <div class="buyreview"> 
-  <h1>구매후기</h1>
-  <p>-구매후기 작성시 구매금액 2%로가 마일리지로 적립됩니다.</p>
-  <p>-사진첨부는 선택사항입니다.</p>
-  </div>
-  <div class="e">
-   <h1>배송안내</h1>
-  </div>
-  <div class="footer">
-      <div id="footer1">
-          <h1>footer</h1>
-      </div>
+<div class="footer">
+    <div id="footer1">
+        <h1>footer</h1>
+    </div>
   </div>
 </table>
 </body>
