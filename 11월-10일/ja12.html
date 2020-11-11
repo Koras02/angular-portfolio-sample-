@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{margin:0;padding:0;}
+      div{width:100px;height:100px;border:1px solid #ccc;
+          float:left;text-align:center;font:bold 24px/100px arial;}
+    </style>
+</head>
+<body>
+    <div onmouseover="this.style.backgroundColor='yellow'"
+    onmouseout="this.style.backgroundColor='#fff'">box1</div>
+    <div onmousedown="this.style.backgroundColor='blue'"
+    onmouseout="this.style.backgroundColor='#fff'">box2</div>
+    <div ondrag="this.style.backgroundColor='red'"
+    ondragover="this.style.backgroundColor='#fff'">box3</div>
+</body>
+</html>
