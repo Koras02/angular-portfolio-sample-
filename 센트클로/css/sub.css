@@ -1,0 +1,664 @@
+@charset "utf-8";
+
+/* reset */
+*{
+margin:0;padding:0; 
+}
+
+ul{list-style:none;}
+li,a{text-decoration:none;}
+   
+body{
+    width:auto;height:9322px;
+    overflow-x: hidden;
+}
+
+/* header 부분 */
+#header {
+    width:1200px;height:36px;margin:auto;
+    font:bold 16px/20px arial;
+
+}
+#header :hover{
+    color:#c0c0c0;
+}
+#header > a {
+    padding:12px;
+    color:#000000;
+}
+#header > #login {
+    display:inline;
+    float:right;
+    padding-right:12px;
+}
+#header > #login a{
+    
+    color:#000;
+}
+#header > #login :hover{
+    color: #c0c0c0; 
+}
+ 
+/* logo 부분 */
+#logo {
+    padding-top:12px;
+    padding-bottom:42px;
+    text-align:center;
+}
+#logo {
+    font:18px/50px arial;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#logo a{
+    color:#000;
+}
+
+/* 카테고리 */
+
+
+/* 카테고리부분 */
+
+.border{
+    width:1900px;height:60px;margin:auto;
+    border:1px solid #000;
+}
+
+.border > #Category1{
+    width:1200px;height:60px;margin:auto;
+    text-align:center;
+    padding:18px;
+    font:bold 18px/24px arial;
+}
+.border > #Category1 > a {
+    padding:65px;
+    color:#000;
+}
+.border > #Category1 > a:hover{
+   color:#c0c0c0;
+}
+.border > #Category1 > a:hover > p{
+    overflow:hidden;
+}
+
+/* 상품 이미지 설정 */
+.Mainvisual{
+    width:1200px;height:675px;margin:auto;
+ 
+}
+.Mainvisual #left{
+    width:409px;height:612px;
+    float:left;
+    padding:24px;
+}
+.Mainvisual p:nth-child(1){
+    width:342px;height:455px;margin:auto;
+    background:url(../images/img/sub/sub_images/센트클로--상품_18.jpg) no-repeat;
+    background-size: 105%;
+}
+/* left1 */ 
+#left1{
+    width:60px;height:100px;
+    border-right:1px solid #000;
+    position: relative;
+    left:40px;
+    bottom:16%;
+    font-size: 8px;
+}
+#left1 h1{
+    text-align: center;
+    font:bold 12px/45px arial;
+}
+#left1 p{
+    text-align: center;
+    font:bold 14px/12px arial;
+}
+/* left2 */
+#left2{
+    width:341px;height:98px;margin:auto;
+    border:1px solid #000;
+}
+#left2 h1{
+    text-align: center;
+    font:12px/24px arial;
+ 
+}
+#left2 a{
+    position: relative;
+    top:22%;
+    left:25%;
+    border:1px solid #000; 
+    padding: 16px;
+}
+/* right */
+.right{
+    width:522px;height:570px;margin:auto;
+    position: relative;
+    top:3.5%;
+    left:5%;
+}
+#title h1{
+    position: relative;
+    right:12%;
+    top:2px;
+    padding:18px;
+    color:#c0c0c0;
+    font:bold 16px/24px arial;
+} 
+#title p{
+    display:inline;
+    position: relative;
+    right:60px;
+    bottom:12px;
+    font:12px/14px arial;
+    color:#fff;
+}
+#title p:nth-child(2){
+    padding:2px;
+    background-color: #ffaae1;
+}#title p:nth-child(3){
+    padding:2px;
+    background-color: #804000;
+}
+/* 할인전  */
+#pay{
+    width:352px;height:246px;margin:auto;
+    position: relative;
+   right: 10%;
+   padding:50px;
+   display: inline;
+   
+}
+#pay table{
+   position: relative;
+   right:35px;
+   bottom:12px;
+}
+#pay table tr td{
+    padding:8px;
+}
+.checkbox{
+    width:70px;height:30px;
+    position: relative;
+    background-color: #fff;
+    font:bold 12px/14px arial;
+    bottom:8%;
+    left:-20%;
+}
+#size{
+    width:56px;height:25px;
+    position: relative;
+    bottom:15%;
+    left:15%;
+    font:bold 6px/10px arial;
+    background-color: #fff;
+}
+#size:hover{
+    color:red;
+}
+#size:hover:after > {
+    color:blue;
+}
+#color{
+    width:40px;height:20px;margin:auto;
+    position: relative;
+    bottom:26%;
+    left:11%;
+}
+#color:active{
+    background-color: aquamarine;
+    border:3px solid #000;
+}
+#color{
+    background-color: aquamarine;
+    position: relative;
+    left:-35%;
+    top:-21%;
+}
+
+.buybutton{
+    width:400px;
+    border-top:1px solid #000;margin:auto;
+    position: relative;
+    left:50px;
+    bottom:30px;
+}
+
+.buybutton #buybutton{
+    width:77px;height:35px;
+    position: relative;
+    right:10%;
+    top:8px;
+    background-color:#c0c0c0;
+    border:1px solid #000;
+    color:#fff;
+}
+.buybutton #AddCart{
+    width:77px;height:35px;
+    position: relative;
+    right:12%;
+    top:8px;
+    background-color:#fff;
+    border:1px solid #000; 
+}
+.total{
+    float:right;
+    position: relative;
+    top:15px;
+    right:12px;
+}
+.total h1{
+    float:left;
+    font:bold 14px/24px arial;
+}
+.total p{
+    font:bold 15px/24px arial;
+    float:right;
+}
+
+ 
+/* 상품설명 1 */
+.menu{
+    width:1200px;margin:auto;
+    position: relative;
+    top:24px;
+    border:1px solid #000;
+}
+.menu ul li{
+    margin:auto;
+    float: left;
+}
+.menu ul li:nth-child(1){
+    width:300px;height:65px;
+    position: relative;
+    right:458px;
+    border:1px solid #000;
+    background-color: #c0c0c0;
+}
+.menu ul li:nth-child(1):hover{
+    color:blue;
+}
+.menu ul li:nth-child(2){
+    width:300px;height:65px;
+    position: relative;
+    right:458px;
+    border:1px solid #000;
+}.menu ul li:nth-child(3){
+    width:300px;height:65px;
+    position: relative;
+    left:145px;
+    bottom:67px;
+    border:1px solid #000
+}.menu ul li:nth-child(4){
+    width:295px;height:65px;
+    position: relative;
+    bottom:67px;
+    left:144px;
+    border:1px solid #000
+}
+.menu ul li{
+    text-align:center;
+}
+.menu ul li a{
+    position: relative;
+    top:25%;
+    color:#000;
+}
+ s
+/* 상품 이미지1 */
+.image88{
+    width:1200px;height:1950px;margin:auto;
+    position: relative;
+    border:3px solid #000;
+}
+#one h1{
+    text-align: center;
+    font:bold 18px/14px arial;
+    padding:50px;
+}
+#one p{
+    text-align: center;
+    font:bold 16px/24px arial;
+    padding:4px;
+    position: relative;
+    bottom:30px;
+}
+#two h1{
+    text-align: center;
+    font:bold 18px/16px arial;
+    padding:20px;
+}
+#two p{
+    text-align: center;
+    font:bold 16px/24px arial;
+    padding:4px;
+    position: relative;
+    bottom:15px;
+}
+#three{
+  padding:15px;
+}
+#three h1{
+    text-align: center;
+    font:bold 18px/24px arial;
+    padding:4px;
+}
+#three p{
+    text-align:center;
+    font:bold 16px/24px arial;
+    padding:4px;
+    position: relative;
+    bottom:2px;
+}
+#three table{
+    padding-top:20px;margin:auto;
+    text-align: center;
+    position: relative;
+    top:55%;
+    padding:85px;
+}
+#three table tr th:nth-of-type(1){
+    color:#fff;
+    background-color:#c0c0c0;
+}
+#three table tr th:nth-of-type(2){
+    color:#c0c0c0;
+}
+#three table tr th{
+    border:1px solid #000;
+    padding:40px;
+}
+
+
+/* 상품 이미지2 */
+.image1{
+    width:1200px;height:3860px;margin:auto;
+}
+.image1 p{
+    padding:40%;
+    text-align: center;
+}
+.image1 p:nth-child(1){
+    background:url(../images/sub/images/상품사진1.jpg) no-repeat;
+    position: relative;
+    left:25%;
+}
+.image1 p:nth-child(2){
+    background:url(../images/sub/images/상품사진2.jpg) no-repeat;
+    position: relative;
+    left:25%;
+}
+.image1 p:nth-child(3){
+    background:url(../images/sub/images/상품사진3.jpg) no-repeat;
+    position: relative;
+    left:25%;
+}
+.image1 p:nth-child(4){
+    background:url(../images/sub/images/상품사진4.jpg) no-repeat;
+    position: relative;
+    top:2%;
+    left:25%;
+}
+/* 상품이미지 2 */
+.e{
+    width:1200px;height:2113px;margin:auto;
+}
+#image2 h1{
+   text-align: center;
+   padding:12px;
+   font:bold 18px/30px arial;
+}
+#image2 table{
+    border:1px solid #000;
+    width:640px;height:255px;
+    margin:auto;
+}
+#image2 table th{
+    border:1px solid #000;
+    background-color:#c0c0c0;
+}
+#image2 table td{
+    padding:12px;
+    border-bottom:1px solid #000;
+}
+/* image3 */
+#image3 h1{
+    width:640px;
+    text-align: left;
+    position: relative;
+    left:22%;
+    border-bottom:1px solid #000;
+}
+#image3 p{
+    font:bold 14px/16px arial;
+    position: relative;
+    left:21%;
+    padding:23px;
+}
+#image3 p:nth-child(3){
+width:640px;
+border-bottom: 1px solid #000;
+}
+#image3 #rewviewButton{
+    float:right;
+    position: relative;
+    right:23%;
+    bottom:100px;
+    width:140px;height:70px;margin:auto;
+    color:white;
+    background-color:gray;
+}
+
+/* review */
+.review{
+    width:664px;height:400px;margin:auto;
+    padding:12px;
+}
+.review h1{
+    padding:10px;
+    float:left;
+    font:bold 16px/25px arial;
+}
+.review #star{
+    position: relative;
+    top:16px;
+}
+.review p{
+    position: relative;
+    bottom:5px;
+    left:19%;
+}
+
+/* size */
+.clo h2{
+    font:bold 14px/20px arial;
+    position: relative;
+    top:12px;
+    right:12%;
+    padding:10px;
+}
+.clo h2:nth-child(2){
+    position: relative;
+    top:-28px;
+    right:-45%;
+}
+.clo #sizes p{
+    display: inline;
+    position: relative;
+    bottom:20px;
+    left:14px;
+    font:bold 15px/45px arial;
+}
+ 
+.clo #sizes p:nth-child(2){
+    width:200px;height:19px;
+    border:1px solid #000;
+}
+.clo #sizes #small{
+    width:25%;
+    background-color:#c0c0c0;
+    position: relative;
+    bottom:15px;
+    left:14px;
+}
+.clo #sizes #small:nth-child(6){
+   background-color: #000;
+}
+/* color */
+.colro p{
+    display: inline;
+    padding:15px;
+    font:bold 14px/45px arial;
+    position: relative;
+    left:45%;
+    bottom:150px;
+}
+
+.colro #small{
+    width:25%;
+    background-color:#c0c0c0;
+    position: relative;
+    bottom:149px;
+    left:300px;
+}
+.colro #small:nth-child(6){
+    background-color: #000;
+}
+/* q&a */
+.QA{
+  width:650px;height:160px;margin:auto;
+  position: relative;
+  top:-150px;
+  right:15px;
+  padding:20px;
+ 
+}
+.QA #top{
+    width:640px;height:41px;margin:auto;
+    border-bottom: 1px solid #000;
+}
+.QA #top h1{
+  position: relative;
+  bottom:10px;
+  right:10px;
+} 
+.QA #top p{
+    font:bold 13px/18px arial;
+    position: relative;
+    padding:10px;
+    top:5px;
+    left:15px;
+}
+ 
+/* recomantion */
+.Recomantion{
+    width:800px;height:420px;margin:auto;
+    border:1px solid #000;
+    position: relative;
+    top:5%;
+}
+.Recomantion h1:nth-child(1){
+    font:bold 20px/24px arial;
+    text-align: center;
+    position: relative;
+    top:5%;
+    right:17%;
+}
+.Recomantion p{
+    font:bold 16px/24px arial;
+    position: relative;
+    top:10%;
+    left:4%;
+}
+
+#img p{
+    width:139px;height:250px;margin:auto;
+    position: relative;
+    padding:5px;
+    border:1px solid #000;
+    top:80px;
+    float:left;
+}
+#img p:nth-child(1){
+    position: relative;
+    left:-20%;
+}
+#img p:nth-child(2){
+    position: relative;
+    left:-15%;
+}
+#img p:nth-child(3){
+    position: relative;
+    left:-10%;
+}
+#img p:nth-child(4){
+    position: relative;
+    left:-5%;
+}
+
+/* tutorial  */
+.tutorial{width:800px;height:480px;margin:auto;border:1px solid #000;
+position: relative; top:10%;}
+.tutorial h1{font:bold 16px/14px arial;padding:20px;}
+.tutorial #pay{position: relative;left:2px;}
+.tutorial #pay h1{float:left;}
+.tutorial #pay p{
+    padding:20px;
+    font:bold 14px/14px arial;
+    position: relative;
+    top:-20px;
+    text-align:left;
+}
+.tutorial #pay p:nth-child(2){border-top:1px solid #000;}
+.tutorial #pay p:nth-child(4){border-top:1px solid #000;}
+.tutorial #pay p:nth-child(4){
+    border-bottom:1px solid #000;
+    position: relative;
+    top:1px;
+}
+.tutorial #pay p:nth-child(4) span{
+   color:red;
+   font:bold 18px/14px arial; 
+}
+.tutorial #pay h1:nth-child(5){
+  width:104px;height:302px;
+  position: relative;
+  top:100px;
+  font:bold 14px/18px;
+}
+ 
+.tutorial #pay h2{
+    float:left;
+    font:bold 18px/20px arial;
+    position: relative;
+    bottom:12%;
+    color:red;
+    padding:80px;
+}
+.tutorial #pays #img1{
+    position: relative;
+    top:30px;
+    right:65%;
+}
+.tutorial #pays #img2{
+    position: relative;
+    bottom:65px;
+    right:50%;
+}
+.tutorial #pays h1{
+    position: relative;
+    top:30px;
+    right:65%;
+}.tutorial #pays h1:nth-child(4){
+    position: relative;
+    bottom:100px;
+    left:20%;
+}
+
+
+
+
+/* footer */
+.footer{
+    width:1900px;height:186px;margin:auto;
+    border:1px solid #000;
+}
