@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<script>
+    function plus(){
+        var n1 = document.getElementById("n1").value;
+        var n2 = document.getElementById("n2").value;
+        var t = Number(n1) + Number(n2);
+        document.getElementById('total').value = t;
+    }
+    function minus(){
+        var n1 = document.getElementById("n1").value;
+        var n2 = document.getElementById("n2").value;
+        var t = Number(n1) - Number(n2);
+        document.getElementById('total').value = t;
+    }
+    function times(){
+        var n1 = document.getElementById("n1").value;
+        var n2 = document.getElementById("n2").value;
+        var t = Number(n1) * Number(n2);
+        document.getElementById('total').value = t;
+    }
+    function devide(){
+        var n1 = document.getElementById("n1").value;
+        var n2 = document.getElementById("n2").value;
+        var t = Number(n1) / Number(n2);
+        document.getElementById('total').value = t;
+    }
+</script>
+</script>
+</script>
+<body>
+    <input type="text" id="n1"><br> 
+    <input type="text" id="n2"><br>
+    <input type="button" value=" + " id="btn1" onClick ="plus()">
+    <input type="button" value=" - " id="btn2" onClcik ="minus()">
+    <input type="button" value=" * " id="btn3" onClick ="times()">
+    <input type="button" value=" / " id="btn4" onClick ="devide()"><br>
+    <input type="text" id="total">
+ 
+</body>
+</html>
