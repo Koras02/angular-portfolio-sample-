@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@charset "utf-8";
  
 /* reset */
 *{
@@ -9,11 +9,6 @@ ul{list-style:none;;}
 
 li,a{text-decoration:none;}
  
-
-body{
-    margin:auto;height:auto;
-    overflow-x: hidden;
-}
 
 /* header 부분 */
 #header {
@@ -87,8 +82,7 @@ body{
 #Mainvisual{
     width:1900px;height:600px;margin:auto;
     background:url("../images/images/Untitled-1.gif") no-repeat;
-    background-attachment: local;
-    background-size:1900px;
+    background-size:100%;
     }
   
 /* Hot keword  */
@@ -206,18 +200,17 @@ body{
 #bestlist > h1{
     padding-bottom:25px;
 }
+#bestlist > #a > a{
+    padding:25px;
+    font:bold 16px/18px arial;
+    color:#000;
+}
 #bestlist > #a > a:hover{
     color:#8d8d8d;
 }
 #bestlist > #a > a:nth-child(1){
     color:rgb(185, 185, 185);
 } 
-#bestlist > #a > a{
-     color:black;
-     padding:45px;
-     font:18px/20px arial;
-     top:-300px;
-}
 .bestitem > a >.img{
     padding:45px;
 }
@@ -266,7 +259,7 @@ body{
     top:-55%;
 }
 .white2{
-    background-color:e8e9ed;
+    background-color:white;
     position:relative;
     left:38%;
     top:-55%;
@@ -313,7 +306,7 @@ body{
 } 
 .Category h1{
     padding:20px;   
-    text-align:cetner;
+    text-align:center;
    
 }
 #CATEGORY #h1{
@@ -506,7 +499,7 @@ body{
 .footerbar > .footer4 > a{
     color:white;
     background-color:#000;
-    border:20px solid #000;
+    border:30px solid #000;
     position: fixed;
     top:800px;right:90px;
 }

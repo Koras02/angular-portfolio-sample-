@@ -9,15 +9,13 @@ ul{list-style:none;}
 li,a{text-decoration:none;}
    
 body{
-    width:auto;height:9422px;
-    overflow-x: hidden;
+    border:1px solid #000;
 }
 
 /* header 부분 */
 #header {
     width:1200px;height:36px;margin:auto;
     font:bold 16px/20px arial;
-
 }
 #header :hover{
     color:#c0c0c0;
@@ -27,12 +25,10 @@ body{
     color:#000000;
 }
 #header > #login {
-    display:inline;
     float:right;
     padding-right:12px;
 }
 #header > #login a{
-    
     color:#000;
 }
 #header > #login :hover{
@@ -45,7 +41,9 @@ body{
     padding-bottom:42px;
     text-align:center;
 }
-#logo {
+#logo a{
+    width:1200px;
+    text-align: center;
     font:18px/50px arial;
     font-family: 'Nanum Gothic', sans-serif;
 }
@@ -68,6 +66,7 @@ body{
     text-align:center;
     padding:18px;
     font:bold 18px/24px arial;
+    
 }
 .border > #Category1 > a {
     padding:65px;
@@ -76,9 +75,7 @@ body{
 .border > #Category1 > a:hover{
    color:#c0c0c0;
 }
-.border > #Category1 > a:hover > p{
-    overflow:hidden;
-}
+ 
 
 /* 상품 이미지 설정 */
 .Mainvisual{
@@ -130,21 +127,20 @@ body{
     padding: 20px;
 }
 #left2 a:nth-child(2){
-    background: url(../images/review/리뷰1\ \(1\).jpg);
+    background: url(../images/review/리뷰2.jpg);
 }
 #left2 a:nth-child(3){
-    background: url(../images/review/리뷰1\ \(2\).jpg);
-    position: relative;right: 10px;
-    position: relative;
+    background:url(../images/review/리뷰1.jpg);
+    position: relative;right:10px;
     left:30%;
 }
 #left2 a:nth-child(4){
-    background: url(../images/review/리뷰1\ \(3\).jpg);
+    background:url(../images/review/리뷰3.jpg);
     position: relative;
     left:35%;
 }
 #left2 a:nth-child(5){
-    background: url(../images/review/리뷰1\ \(4\).jpg);
+    background:url(../images/review/리뷰4.jpg);
     position: relative;
     left:40%;
 }
@@ -192,8 +188,8 @@ body{
    right:35px;
    bottom:12px;
 }
-#pay table tr td{
-    padding:8px;
+#pay table tr th{
+    padding:9px;
 }
 .checkbox{
     width:70px;height:30px;
@@ -214,7 +210,7 @@ body{
 #size:hover{
     color:red;
 }
-#size:hover:after > {
+#size:hover:after {
     color:blue;
 }
 #color{
@@ -675,12 +671,12 @@ position: relative; top:10%;}
 }
 .tutorial #pays #img1{
     position: relative;
-    top:30px;
+    top:35px;
     right:65%;
 }
 .tutorial #pays #img2{
     position: relative;
-    bottom:68px;
+    bottom:64px;
     right:50%;
 }
 .tutorial #pays h1{
@@ -706,24 +702,52 @@ position: relative; top:10%;}
     left:45%;
 }
 
-.tutorial #maket img{
+.tutorial #maket #img3{
     position: relative;
     bottom:20px;
-    right: 30%;
+    right:30%;
     padding:20px;
 }
-.tutorial #maket p{
-    position: relative; 
-    top:12px;
-    left:14%;
-    padding:1px;
-    font:bold 11px/24px arial;
+.tutorial #maket #img4{
+    position: relative;
+    bottom:20px;
+    right:28%;
+    padding:20px;
+}
+.tutorial #maket #img5{
+    position: relative;
+    bottom:20px;
+    right:26%;
+    padding:20px;
 }
 .tutorial #maket h1{
     float: left;
     position: relative;
-    top:40px;
-    left:-12px;
+    top:42px;
+    left:0px;
+}
+.tutorial #maket h1:nth-child(4){
+    position: relative;
+    top:42px;
+    left:-15px;
+}
+.tutorial #maket h1:nth-child(5){
+    position: relative;
+    top:42px;
+    left:10px;
+}
+.tutorial #maket h1:nth-child(6){
+    position: relative;
+    top:42px;
+    left:40px;
+}
+
+.tutorial #maket p{
+    position: relative; 
+    top:12px;
+    left:14%;
+    padding:2px;
+    font:bold 11px/22px arial;
 }
 
 /* cancle */
@@ -871,10 +895,10 @@ position: relative; top:10%;}
     color:red;
 }
 
-#tutorial #img1{
+#tutorial #img6{
     position: relative;
-    top:-100px;
-    left:100px;
+    top:-90px;
+    left:120px;
 }
 #tutorial p:nth-child(4){
     position: relative;
@@ -882,20 +906,20 @@ position: relative; top:10%;}
     left:180px;
 }
 
-#tutorial #img2{
+#tutorial #img7{
     position: relative;
-    top:-190px;
-    left:380px;
+    top:-180px;
+    left:400px;
 }
 #tutorial p:nth-child(6){
     position: relative;
     top:-150px;
-    left:370px;
+    left:390px;
 }
 
-#tutorial #img3{
+#tutorial #img8{
     position: relative;
-    top:-280px;
+    top:-275px;
     left:580px;
 }
 
@@ -933,33 +957,33 @@ position: relative; top:10%;}
 #tutorial2 p:nth-child(3){
     float:left;
     position: relative;
-    left:20%;
-    top:50%;
+    left:2%;
+    top:55%;
 }
 #tutorial2 p:nth-child(4){
     float:left;
     position: relative;
-    left:26%;
-    top:50%;
+    left:28%;
+    top:55%;
 }
 #tutorial2 p:nth-child(5){
     float:left;
     position: relative;
-    left:39%;
-    top:50%;    
+    left:38%;
+    top:55%;    
 }
-#tutorial2 #img4{
+#tutorial2 #img9{
     position: relative;
-    right:23%;
-    top:12px;
+    left:-20%;
+    top:8px;
 }
-#tutorial2 #img5{
+#tutorial2 #img10{
     position: relative;
     right:10%;
     top:12px;
-    right:70px;
+    right:50px;
 }
-#tutorial2 #img6{
+#tutorial2 #img11{
     position: relative;
     right:-7%;
     top:10%;
@@ -982,7 +1006,7 @@ position: relative; top:10%;}
 #payback p:nth-child(3) span{
     color:red;
 }
-#payback #img7{
+#payback #img12{
     position: relative;
     top:50px;
     left:20%;
@@ -1001,7 +1025,7 @@ position: relative; top:10%;}
     left:90px;
     top:-10px;
 }
-#payback #img8{
+#payback #img13{
     position: relative;
     top:40px;
     left:20%;
@@ -1038,10 +1062,10 @@ position: relative; top:10%;}
     font:bold 14px/16px arial;
     text-align: center;
     position: relative;
-    left:65px;
+    left:60px;
     top:60px;
 }
-#payback #img9{
+#payback #img14{
     position: relative;
     left:170px;
     bottom:12px;
@@ -1113,14 +1137,14 @@ position: relative; top:10%;}
 .footerbar > .footer4{
     float:left;
     position: relative;
-    font:bold 14px/40px arial;
+    font:bold 14px/45px arial;
     top:10px;left:500px;
 }
 
 .footerbar > .footer4 > a{
     color:white;
     background-color:#000;
-    border:20px solid #000;
+    border:30px solid #000;
     position: fixed;
     top:800px;right:90px;
 }
