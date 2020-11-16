@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascirpt</title>
+</head>
+<style>
+    #box{width:280px;height:200px;border:5px solid #ccc;
+    font:bold 100px/200px arial;text-align: center;}
+</style>
+<script>
+    var i = 1;
+    var auto;
+
+  function plus(){
+    var p = document.getElementById('box').innerHTML = i;
+    i++;
+  }
+  function playBtn(){
+     auto = setInterval('plus()',1000);
+  }
+  function stopBtn(){
+      clearInterval(auto);
+  }
+  function resetBtn(){
+      clearInterval(auto);
+      document.getElementById('box').innerHTML = 0;
+      i = 1;
+  }
+</script>
+<body>
+    <button onclick="stopBtn()">STOP</button>
+    <button onclick="playBtn()">PLAY</button>
+    <button onclick="resetBtn()">RESET</button>
+    <div id="box"> 0 </div>
+</body>
+</html>

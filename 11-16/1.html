@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    *{margin:0;padding:0;}
+    p{width:300px;height:300px;border:4px solid #ccc;}
+</style>
+<script>
+    var i = 1;
+    function change(){
+        var p = document.getElementById('photo');
+        if(i>=1 && i<4){
+        p.src = "images/image"+i+".jpg";
+        i++;
+        }else{
+            p.src="images/image1.jpg";
+            i=1;
+        }
+    }
+</script>
+<body onload="setInterval('change()',1000)">
+    <p><img src="images/image1.jpg" alt="kakao0" id="photo"></p>
+</body>
+</html>
