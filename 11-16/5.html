@@ -20,16 +20,22 @@
      }
  </style>
  <script>
+     window.onload = function(){
      var i = 0;
      var p = document.getElementById('photo');
-     function nshow(){
-         if(i>=5){
+     
+     var nBtn = document.getElementById('next');
+     nBtn.onclick = function(){
+         if(i>=4){
              alert('마지막 사진입니다!');
          }else{
              i++;
              p.src='images/image'+i+'.jpg';
          }
-         function psohw(){
+     }
+      
+    var pBtn = document.getElementById('prev');
+    pBtn.onclick = function(){
              if(i<=0){
                  alert('처음 사진입니다!');
              }else{
@@ -37,12 +43,13 @@
                  p.src = 'images/image'+i+'.jpg';
              }
          }
+     }
  </script>
  <body>
      <div id="box">
-         <a href="#" id="prev" class="btn" onclick="pshow()">&lt; prev</a>
+         <a href="#" id="prev" class="btn">&lt; prev</a>
          <p><img src="images/image1.jpg" alt="image1" id="photo"></p>
-         <a href="#" id="next" class="btn" onclick="nshow()">next &gt;</a>
+         <a href="#" id="next" class="btn">next &gt;</a>
      </div>
  </body>
  </html>
