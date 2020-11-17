@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Javscript</title>
+</head>
+<style>
+    *{margin:0;padding:0;}
+    img{vertical-align:top;max-width: 100%;}
+    #gallery{display: inline;}
+</style>
+<script>
+    function change(){
+        var photo = document.getElementById('big');
+        photo.src = "images/kakao1.jpg";
+    }
+</script>
+<body>
+    <div id="gallery"> 
+        <p><img src="images/kakao0.jpg" alt="카카오" id="big"></p>
+    <ul>
+        <li><img src="images/kakao0.jpg" alt="카카오"
+            onclick="change(1)"></li>
+        <li><img src="images/kakao1.jpg" alt="카카오"
+            onclick="change(2)"></li>
+        <li><img src="images/kakao2.jpg" alt="카카오"
+            onclick="change(3)"></li>
+        <li><img src="images/kakao3.jpg" alt="카카오"
+            onclick="change(4)"></li>
+    </ul>
+    </div>
+</body>
+</html>
