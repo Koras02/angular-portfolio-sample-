@@ -7,13 +7,29 @@
 <style>
     *{margin:0;padding:0;}
     img{vertical-align:top;max-width: 100%;}
-    #gallery{display: inline;}
+    #gallery{display:inline;float:left;}
+    li{float:left;list-style: none;width:100px;margin:auto;
 </style>
 <script>
-    function change(){
-        var photo = document.getElementById('big');
-        photo.src = "images/kakao1.jpg";
-    }
+    function change(n){
+        var photo = document.getElementById("big");
+     /*  } if(n==0){
+            photo.src = "images/kakao0.jpg";
+         } else if(n==1){
+              photo.src = "images/kakao1.jpg";
+         } else if(n==2){
+              photo.src = "images/kakao2.jpg";
+          } else if(n==3){
+           photo.src = "images/kakao3.jpg";
+         } = document.getElementById('big'); 
+        /* photo.src = "images/kakao"+n+".jpg"; */
+        photo.setAttribute('src',"images/kakao"+n+".jpg",);
+
+        /* 
+          속성값을 변경하는 메서드 
+          setAttribute('속성명','속성값') --> ()안의 속성을 ()안의 값으로 변경함 
+         */
+      }
 </script>
 <body>
     <div id="gallery"> 
