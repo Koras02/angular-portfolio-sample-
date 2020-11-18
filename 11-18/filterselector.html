@@ -19,5 +19,24 @@
         <li>menu7</li>
         <li>menu8</li>
     </ul>
+
+    <script>
+        // li 첫번째 : 배경색 노랑 
+        $('li:eq(0)').css('background-color','yellow');
+
+        // li 짝수 : 글씨색 빨강 
+        $('li:even').css('color','red');
+        
+        // li 홀수 : 글씨 크기 24px 
+        $('li:odd').css({fontSize:'24px'});
+
+        // li첫번째,마지막 : 글씨크기48px / 글씨 진하게 
+        $('li:first,li:last').css({fontSize:'48px',fontWeight:'bold'})
+        
+        // li 첫번째 빼고 나머지 : 배경색 pink 
+        $('li:not(:eq(0))').css('backgroundColor','pink');
+
+        
+    </script>
 </body>
 </html>
