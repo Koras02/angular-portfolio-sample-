@@ -9,12 +9,14 @@
 <body>
     <h1>Jquery</h1>
     <p>jQuery 수업시간입니다.</p>
-    <h2>sss</h2>
-
+    <p id="text">오늘은 수요일 입니다</p>
+    <p class="box">내일은 목요일 입니다</p>
     <script>
         jQuery('h1').css({color:'red'})
-        $('p').css('color','blue')
-        $('h2').css('color','red')
+        $('p').css('color','blue');
+        $('#text').css({backgroundColor:'yellow',border:'2px solid #000'});
+        $('.box').css({color:'red'})
+          
     </script>
 </body>
 </html>
