@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-migrate-3.3.0.js"></script>
+</head>
+<style>
+     ul{list-style:none;}
+</style>
+<body> 
+    <ul>
+        <li><span>menu1</span></li>
+        <li>메뉴2</li>
+        <li>menu3</li>
+        <li></li>
+    </ul>
+    <ul>
+        <li>메뉴5</li>
+        <li>menu6</li>
+        <li>메기7</li>
+        <li></li>
+    </ul>
+
+    <script>
+        // '메' 글자 있는 경우 : 테두리 1px 검정
+        $('li:contains("메")').css({border:'1px solid #000'});
+      
+        // '메뉴' 글자 있는 경우 : 글자색 빨강  :
+        $('li:contains("메뉴")').css({color:'red'});
+
+        // span요소가 있는 경우 : 테두리 2px 점선 빨강 
+        $('ul:has(span)').css({border:'2px dashed red'});
+
+        // 내용이 없는 경우: '안녕?' 글자넣기 
+        $('li:empty').text('abc')
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-migrate-3.3.0.js"></script>
+    <style>
+        li{line-height: 50px;}
+    </style>
+</head>
+<body>
+  <ul>
+      <li>menu1</li>
+      <li>menu2</li>
+      <li>menu3</li>
+      <li>menu4</li>
+  </ul>
+  <ul>
+    <li>menu5</li>
+    <li>menu6</li>
+    <li>menu7</li>
+    <li>menu8</li>
+    <li>menu9</li>
+    <li>menu10</li>
+</ul>
+
+<script>
+    $('li:first-child').css('background-color','yellow');
+    // li 마지막 - 배경색 : cyan
+    $('li:last-child').css('background-color','cyan');
+    // 두번째 li : 글자 빨강 
+    $('li:nth-child(2)').css({color:'red'});
+    // 짝수번째 : 아래 테두리 2px 실선 파랑 
+    $('li:nth-child(even)').css({borderBottom:'2px solid blue'})
+    // 홀수 번째 : 아래 테두리 2px 실선 빨강 
+    $('li:nth-child(odd)').css({borderBottom:'2px solid red'})
+    //2번째마디 : 글자 진하게 크기 24px arial로 
+    $('li:nth-child(2n)').css({font:'bold 24px/50px arila'})
+</script>
+</body>
+</html>

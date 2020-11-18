@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-migrate-3.3.0.js"></script>
+</head>
+<body>
+    <h1>Jquery</h1>
+    <p>jQuery 수업시간입니다.</p>
+    <p id="text">오늘은 수요일 입니다</p>
+    <p class="box">내일은 목요일 입니다</p>
+    <script>
+        jQuery('h1').css({color:'red'})
+        $('p').css('color','blue');
+        $('#text').css({backgroundColor:'yellow',border:'2px solid #000'});
+        $('.box').css({color:'red'})
+          
+    </script>
+</body>
+</html>
