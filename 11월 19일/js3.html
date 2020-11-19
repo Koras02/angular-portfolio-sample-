@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-migrate-3.3.0.js"></script>
+</head>
+<style>
+    div,p{float:left;margin:10px;background-color:#ffff;}
+    #box1,#box6,p{
+        width:100px;height:100px;border:1px solid #000;
+    }
+</style>
+<body>
+    <div id="wrap">
+        <div id="box1">box1</div>
+        <p>box2</p>
+        <p>box3</p>
+        <p>box4</p>
+        <p>box5</p>
+        <div id="box6">box6</div>
+    </div>
+    <script>
+        // box2:배경노랑
+        $('#wrap>p').first().css('backgroundColor','yellow');
+        // box5:배경 핑크
+        $('#wrap>p').last().css('backgroundColor','pink');
+        // box3:배경 cyan
+        $('#wrap>p').eq(1).css('backgroundColor','cyan');
+        // div제외하고 : 테두리 2px 빨간 실선
+        $('#wrap>*').not('div').css('border','2px dotted red');
+    </script>
+</body>
+</html>
