@@ -1278,6 +1278,7 @@ border-bottom: 1px solid #000;
     border:1px solid #000
 }
 .waytutorial #tur h1{
+<<<<<<< HEAD
     width: 20%;
     position: relative;
     bottom:120px;
@@ -1382,6 +1383,12 @@ border-bottom: 1px solid #000;
     font:bold 11px/14px arial;
 }
  
+=======
+    text-align:left;
+    padding:12px;
+    font:bold 16px/16px arial;
+}
+>>>>>>> 29de03f (CETNCLO)
 
 /* table */
 .tablebar{
@@ -1412,7 +1419,11 @@ border-bottom: 1px solid #000;
     position: relative;
     top:12px;left:2%;
 }
+<<<<<<< HEAD
 /* footer2 */
+=======
+/* footer2  */
+>>>>>>> 29de03f (CETNCLO)
 .footerbar > .footer2 > h1{
     padding-bottom:18px;font:20px/16px arial;}
 
