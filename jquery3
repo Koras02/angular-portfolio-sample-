@@ -5,3 +5,8 @@ $('대상').메서드();
 prepend.afend (자식요소로 들어가짐)
 
 before.after(형제요소) 
+
+
+return 함수명; 리턴하라는뜻
+
+return; 멈추라는뜻

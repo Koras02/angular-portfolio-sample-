@@ -28,13 +28,23 @@
      $('#btn1').click(function(){
          $('#box img:last').remove();
      })
+    // btn2 클릭하면 box 안에 맨 앞에 이미지 넣기 
     $('#btn2').click(function(){
-        $('#box').plustImg();
+        // box 안의 이미지가 3개이상 경고창 띄우기
+        if($('#box img').length>=3){
+           alert('더이상 사진을 넣을 수 없습니다!!');
+           retrun; 
+        }
+        $('#box').prepend(plusImg());
     })
-    function plustImg(){
-        var n = Math.floor(Math.rendom()*6);
-        var p = '<img src="img/p'+n+'.jpg>';
-        return p;
+    var n = 3;
+    function plusImg(){
+        var photo = '<img src="img/p'+n+'.jpg">';
+        n--;
+        if(n<=0){
+            n = 3;
+        }
+        return photo;
     }
 </script>
 </body>
