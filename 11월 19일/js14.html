@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src='js/jquery-migrate-3.3.0.js'></script>
+</head>
+<style>
+   div{
+       width:200px;padding:20px;
+       text-align: center;border:4px solid #ccc;
+   }
+   .border{
+       border:4px solid red;
+   }
+</style>
+<body>
+    <div>
+        <img src="img/p2.jpg" alt="">
+    </div>
+    
+    <script>
+      $('img').click(function(){
+          $('div').toggleClass('border');
+      })   
+    </script>
+</body>
+</html>
