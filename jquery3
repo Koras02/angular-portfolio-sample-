@@ -1,0 +1,7 @@
+JQuery
+
+$('대상').메서드();
+
+prepend.afend (자식요소로 들어가짐)
+
+before.after(형제요소) 
