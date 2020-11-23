@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-migrate-3.3.0.js"></script>
+    <style>
+        *{margin:0;padding:0;}
+        #wrap{width:860px;margin:auto;position:relative;}
+        ul{list-style: none;width:860px;height:660px;
+        overflow:hidden;text-align: center;}
+        li{float:left;margin:5px;width:200px;height:200px;background-color:#ccc;
+        cursor:pointer;}
+        p{position:absolute;top:0;right:-50px;
+          background-color:purple;
+          font:bold 12px/50px arial;width:50px;
+          height: 50px; border-radius: 25px;
+          text-align: center;color:#fff;cursor:pointer}
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('img').click(function(){
+                $(this).fadeOut('slow')
+            })
+        $('#again').click(function(){
+            $('li img').fadeIn('fast')
+        })
+        })
+    </script>
+</head>
+<body>
+     <ul id="wrap">
+        <ul> 
+        <li><img src="img/p0.jpg" alt=""></li>
+        <li><img src="img/p1.jpg" alt=""></li>
+        <li><img src="img/p2.jpg" alt=""></li>
+        <li><img src="img/.jpg" alt=""></li>
+        <li><img src="img/p4.jpg" alt=""></li>
+        <li><img src="img/p5.jpg" alt=""></li>
+        <li><img src="img/p1.jpg" alt=""></li>
+        <li><img src="img/p2.jpg" alt=""></li>
+        <li><img src="img/p.jpg" alt=""></li>
+        <li><img src="img/p4.jpg" alt=""></li>
+        <li><img src="img/p5.jpg" alt=""></li>
+        <li><img src="img/p2.jpg" alt=""></li>
+     </ul>
+    <p id="again">again!</p>
+<script>
+   
+</script>
+</body>
+</html>
