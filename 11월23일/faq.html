@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faq</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-migrate-3.3.0.min.js"></script>
+    <script>
+        $(function(){
+           faq();   
+        })  
+        function faq(){
+                   //답변 안보이게 하기
+            $('dd').hide();
+            // 질문 클릭하면 해당답변 보이기 ,
+            $('dt').click(function () {
+                // $(this).addClass('open');
+                // $(this).next().slideToggle();
+            $(this).toggleClass('open').next().slideToggle();
+        })  
+    }
+    </script>
+</head>
+<body>
+     <div id="box">
+         <h1>Frequently Asked Questions</h1>
+          <dl>
+              <dt>개강일이 언제인가요?</dt>
+              <dd>
+                  <p>매달 초 개강이 이루여며, 지점별로 개강일이 다를 수 있습니다<br>
+                  개강일은 홈페이지 메인화면의 게시판에서 공지사항을 통하여 확인이 가능합니다. </p>
+              </dd>
+              <dt>수강등록은 방문해야만 가능한가요? </dt>
+              <dd>
+                  <p>방문을 통하여 해당과정에 대한 전문상담을 거친후 등록하는것이 좋으나,방문이 힘드신 경우 전화통화로 충분한 상담을 하신후 온라인상에서 
+                     이니시스 결제를 통하여 가능합니다.
+                  </p>
+              </dd>
+              
+              <dt>휴학신청 절차 및 기간이 어떻게 되나요 ?</dt>
+              <dd>
+                  <p>휴학을 하려는 수강생은 멘토 선생님을 통하여 휴강신청이 가능하며, 개강일 기준으로 3일전까지
+                   휴학신청을 하셔야 합니다. 휴학기간은 3개월 동안만 가능하고 다음과 같은 경우에는 장기 휴학만 가능합니다.<br>
+                   -군입대, 중대한 사고로 인한 병원치료 시, 장기출장 및 해외출장, 천재지변 등 기타 중대한 사유
+                  </p>
+              </dd>
+              <dt>정규과정과 단과과정 등록의 차이는 무엇인가요?</dt>
+              <dd>
+                  <p>정규과정이란 학과에 포함된 전체 과정을 등록하는 것이며, 단과과정이란 그 중 일부만 등록하는 것을 말합니다.
+                      정규과정과 단과과정 등록의 차이는 수강료의 할인율, 재수강 기회 부여 등 수강생에게 주어지는 혜택차이이며,
+                       정확한 할인율은 등록과정수에 따라 차이가 있습니다.
+                  </p>
+              </dd>
+              <dt>수업 시간 표는 어디서 확인 할 수 있나요 </dt>
+              <dd>
+                  <p>학원에 방문하시면 안내데스크 옆쪽에 전체 수업시간표가 계시되어있으며, 각 강의실별로 출입문 옆에 해당 강의실에서 
+                      진행되는 하루 시간표가 부착되어 있습니다.
+                      방문이 어려우실 경우는 학원으로 문의하시면 시간표 확인이 가능합니다.
+                  </p>
+              </dd>
+          </dl>
+     </div>
+</body>
+</html>

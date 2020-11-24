@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-migrate-3.3.0.js"></script>
+</head>
+<style>
+    div{width:200px;border:4px solid #ccc;text-align:center;
+    overflow: hidden;}
+    img{vertical-align:top;}
+</style>
+<script>
+    $(function(){
+        $('#bt1').click(function(){
+            $('#box').animate({width:'0px',borderWidth:'0px'},'slow');
+        })
+        $('#bt2').click(function(){
+            $('#box').animate({width:'200px',borderWidth:'4px'},'slow')
+        })
+    })
+</script>
+<body>
+    <div id="box">
+        <img src="img/p0.jpg" alt="">
+    </div>
+    <button id="bt1">SlideLeft</button>
+    <button id="bt2">SlideRight</button>
+</body>
+</html>

@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+body,
+div,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+body {
+  background-color: #ffc;
+}
+#box {
+  width: 200px;
+  margin: auto;
+}
+
+/* 주메뉴 */
+.group > a {
+  display: block;
+  width: 100%;
+  height: 35px;
+  font: bold 18px/35px "나눔고딕";
+  color: #fff;
+  text-indent: 20px;
+}
+.menu {
+  background-color: purple;
+}
+/* 주메뉴 마우스 올렸을때 */
+.menuOn {
+  background-color: #c0f;
+}
+
+/* sub 메뉴 */
+.sub > li > a {
+  display: block;
+  width: 100%;
+  height: 35px;
+  background-color: #fcf;
+  text-indent: 20px;
+  font: bold 14px/35px "나눔고딕";
+}
+.sub > li > a:hover {
+  background-color: #f3f;
+  color: #fff;
+}
