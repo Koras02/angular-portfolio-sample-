@@ -15,13 +15,23 @@ $(function(){
        $('#boxBody div').slidUp(500);
        var n = $(this).index();
        $('#boxBody div:eq('+n+')').slideDown(500);
+    }).mouseover(function(){ //마우스 오버하면
+       $(this).addClass('mouseover');
+    }).mouseout(function(){ //마우스 아웃하면
+       $(this).removeClass('mouseover');   
     })
 
-    //tab 메뉴 마우스 오버하면 메뉴 활성화하기 
-    $('#tabMenu>li').mouseover(function(){~
-        $(this).addClass('mouseover');
-    })
-    $('#tabMenu>li').mouseout(function(){
-        $(this).removeClass('mouseover');
-    })
+     //boxBody안의 li에 마우스 올리면 배경색 변경하기 
+     $('#boxBody li').mouseover(function(){
+         $(this).css('backgroundColor','#888');
+     }).mouseout(function(){
+         $(this).css('backgroundColor','');
+     }).click(function(){
+        //  window.location = $(this).attr('title');
+        // 새창
+        var link = $(this).attr('title');
+        window.open(link);
+     })
+
+
 })

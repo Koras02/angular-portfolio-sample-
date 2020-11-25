@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-migrate-3.3.0.js"></script>
+    <style>
+       *{margin:0;padding:0;}
+       div{padding:20px;background-color:pink;text-align:cetner;
+            color:#fff;cursor:pointer;position:absolute;}
+    </style>
+    <script>
+        $(function(){
+            $('#box').click(function(){
+                $(this).animate({left:'300px',fontSize:'50px'},1000,function(){
+                    $(this).css({color:'yellow',backgroundColor:'purple',fontWeight:'bold'});
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="box">HAPPY DAY!</div>
+</body>
+</html>
