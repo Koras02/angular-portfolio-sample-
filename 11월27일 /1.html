@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-migrate-3.3.0.js"></script>
+    <style>
+        *{margin:0;padding:0;}
+        ul{list-style:none;}
+        li{width:150px;height:100px;float:left;}
+        a{display:block;text-decoration:none;color:#222;
+           font:bold 24px/100px arial,'나눔고딕';text-align:center;
+           background-color:yellow;}
+        a:hover{color:yellow;background-color:purple;}
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">menu 0</a></li>
+        <li><a href="#">menu 1</a></li>
+        <li><a href="#">menu 2</a></li>
+        <li><a href="#">menu 3</a></li>
+        <li><a href="#">menu 4</a></li>
+    </ul>
+
+    <script>
+        // $('li>a').text('메뉴');
+        // $('li>a').each(function(){
+            // $(this).text('메뉴');
+        // })
+
+        // $('li:eq(0)>a').text('메뉴0');
+        // $('li:eq(0)>a').text('메뉴1');
+        // $('li:eq(0)>a').text('메뉴2');
+        // $('li:eq(0)>a').text('메뉴3');
+        // $('li:eq(0)>a').text('메뉴4');
+
+        // for(var i=0;i<5;i++){
+            // $('li:eq('+i+')>a').text('메뉴'+i);
+        // }
+        $('li>a').each(function(){
+            var i =  $(this).index();
+            $(this).text('메뉴'+i);
+        })
+    </script>
+</body>
+</html>

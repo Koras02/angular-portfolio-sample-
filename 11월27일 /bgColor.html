@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bgcolor</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-migrate-3.3.0.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+            width: 520px;
+            margin: 50px auto;
+        }
+
+        li {
+            float: left;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            font: bold 18px/100px arial;
+            color: #fff;
+            border: 2px solid #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="box">
+        <li>red</li>
+        <li>yellow</li>
+        <li>green</li>
+        <li>purple</li>
+        <li>navy</li>
+    </ul>
+    <script>
+        //body의 배경색을 li 첫 번째 text값으로 설정하기 
+        var c = $('#box li:eq(0)').text();
+        $('body').css('backgroundColor', c);
+
+        // li 배경색을 li안의 text값으로 설정하기 
+        // for (var i = 0; i < 5; i++) {
+            // var t = $('#box li:eq(' + i + ')').text();
+            // $('#box li:eq(' + i + ')').css({ backgroundColor: t });
+        // }
+        $('#box li').each(function(){
+            var bg = $(this).text(); 
+            $(this).css({backgroundColor:bg});
+        })
+
+        //li 클릭하면 body배경색을 li의 배경색으로 변경하기
+        $('#box li').click(function () {
+            var color = $(this).text();
+            $('body').animate({ backgroundColor: color }, 1000);
+        });
+    </script>
+</body>
+
+</html>
