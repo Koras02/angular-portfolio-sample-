@@ -3,10 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Quick menu</title>
-    <link rel="stylesheet" href="css/quickMenu.css">
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/jquery-migrate-3.3.0.js"></script>
     <link rel="stylesheet" href="css/quick.css">
+    <script>
+        $(function(){
+            var menu = $('#quickMenu>ul>li');
+            menu.hover(function(){  //mouseenter
+                  //메뉴 활성화
+                  $(this).children('.menu_text').addClass('on');
+                  //이미지 보이기
+                  $(this).children('.menu_img').animate({height:'84px'},'slow')
+               },function(){  //mouseleave
+                   
+            })
+        })
+    </script>
 </head>
 <body>
     <div id="quickMenu">

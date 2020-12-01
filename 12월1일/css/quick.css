@@ -34,3 +34,19 @@ body {
 #quickMenu > ul > li {
   text-align: center;
 }
+#quickMenu > ul > li > .menu_img {
+  height: 0;
+  overflow: hidden;
+}
+#quickMenu > ul > li > .menu_img > a > img {
+  height: 84px;
+}
+
+#quickMenu > ul > li > .menu_text {
+  line-height: 41px;
+  border-bottom: 1px solid #222;
+}
+#quickMenu > ul > li > .menu_text.on > a {
+  color: red;
+  font-weight: bold;
+}
