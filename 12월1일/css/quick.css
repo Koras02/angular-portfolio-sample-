@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+img {
+  border: 0;
+  vertical-align: top;
+}
+
+body {
+  font: 14px "나눔고딕";
+}
+
+#quickMenu {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+}
+#quickMenu > ul > li {
+  text-align: center;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-migrate-1.4.1.js"></script>
+</head>
+<script>
+    $(function(){
+        // $('#btn').mouseover(function(){
+            // $('p').css('display','block');
+        // })
+        // $('#btn').focus(function(){
+            // $('p').css('display','block');
+        // })
+        // $('#btn').mouseover(function(){
+            // $('p').css('display','block');
+        // }).focus(function(){
+            // $('p').css('display','block');
+        // })
+        // $('#btn').on('mouseover',function(){
+            // $('p').css('display','block');
+        // }).on('focus',function(){
+            // $('p').css('display','block');
+        // })
+        $('#btn').on('mouseover focus',function(){
+            $('p').css('display','block');
+        })
+    })
+</script>
+<body>
+    <button id="btn">마우스 올리기</button>
+</body>
+</html>
