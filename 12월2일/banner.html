@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-migrate-3.3.0.js"></script>
+    <script src="js/menu.js"></script>
+    <title>Document</title>
+</head>
+<body>
+      <div id="banner">
+          <div id="photo">
+              <img src="images/b1.jpg" alt="" id="image1">
+              <img src="images/b2.jpg" alt="" id="image2">
+              <img src="images/b3.jpg" alt="" id="image3">
+              <img src="images/b4.jpg" alt="" id="image4">
+          </div>
+          <div id="btnBox">
+              <li id="btn0"><a href="#">1</a></li>
+              <li id="btn2"><a href="#">2</a></li>
+              <li id="btn3"><a href="#">3</a></li>
+              <li id="btn4"><a href="#">4</a></li>
+          </div>
+      </div>
+
+      <script>
+        //   버튼 클릭하면 배너이동 
+        $('#btnBox li a').click(function(){
+            var num = $(this).text();
+            banner(num);
+            return false; //a태그 원래 기능 해제
+        })
+        // 배너 이동하는 함수 저으이
+        function banner(n){
+            var k = -400 * (Number(n)-1);
+            $('#photo').animate({left:k},500);
+        }
+
+      </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-migrate-3.3.0.js"></script>
+    <script src="js/menu.js"></script>
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Document</title>
+</head>
+<body>
+      <div id="banner">
+          <div id="photo">
+              <img src="images/b1.png" alt="" id="image1">
+              <img src="images/b2.png" alt="" id="image2">
+              <img src="images/b3.png" alt="" id="image3">
+              <img src="images/b4.png" alt="" id="image4">
+          </div>
+          <div id="btnBox">
+              <li id="btn0"><a href="#">1</a></li>
+              <li id="btn1"><a href="#">2</a></li>
+              <li id="btn2"><a href="#">3</a></li>
+              <li id="btn3"><a href="#">4</a></li>
+          </div>
+      </div>
+
+      <script>
+        $('#btnBox li:nth-child(1) a').addClass('on');
+        //   버튼 클릭하면 배너이동 
+        $('#btnBox li a').click(function(){
+            var numName = $(this).parent().inde();
+            var num = numName.substr(3,1);
+            banner(num);
+            $('#btnBox li a').removeClass('on');
+            $(this).addClass('on');
+            return false; //a태그 원래 기능 해제
+        })
+        // 배너 이동하는 함수 저으이
+        function banner(n){
+            var k = -400 * Number(n);
+            $('#photo').animate({left:k},500);
+        }
+      </script>
+</body>
+</html>
