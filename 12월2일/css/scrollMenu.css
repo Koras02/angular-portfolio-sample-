@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 50px;
+  left: 0;
+}
+li {
+  width: 50px;
+  height: 80px;
+  border-radius: 15px;
+}
+
+li:nth-child(1) {
+  background-color: red;
+}
+li:nth-child(2) {
+  background-color: pink;
+}
+li:nth-child(3) {
+  background-color: yellow;
+}
+li:nth-child(4) {
+  background-color: green;
+}
+li:nth-child(5) {
+  background-color: cyan;
+}
+li:nth-child(6) {
+  background-color: navy;
+}
+li:nth-child(7) {
+  background-color: purple;
+}
+
+li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+li.on {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.contents {
+  width: 100%;
+}
+.contents > div {
+  width: 100%;
+  height: 100vh;
+  font: bold 100px/100vh "forte";
+  text-align: center;
+}
+#con1 {
+  background: url(../images/후기.png) no-repeat center top fixed;
+}
+#con2 {
+  background-color: orange;
+}
+#con3 {
+  background-color: yellow;
+}
+#con4 {
+  background-color: green;
+}
+#con5 {
+  background-color: cyan;
+}
+#con6 {
+  background-color: navy;
+}
+#con7 {
+  background-color: purple;
+}
