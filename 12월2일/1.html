@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="css/banner.css">
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/jquery-migrate-1.4.1.js"></script>
+</head>
+<body>
+    <div id="banner">
+        <div id="photo">
+            <img src="images/b2.jpg" alt="">
+            <img src="images/b3.png" alt="">
+            <img src="images/b4.png" alt="">
+            <img src="images/bg.png" alt="">
+        </div>
+    </div>
+
+    <script>
+       $('#btnBox li:nth-child(1) a').addClass('on');
+       //버튼 클릭하면 배너 이동하기 
+       $('#btnBox li a').click(function(){
+           var num = $(this).parent().index();
+           banner(num);
+           $('#btnBox li a').removeClass('on');
+           $(this).addClass('on');
+           retrun false; //a태그 원래 기능해체
+       })
+       //배너 이동하는 함수 정의
+       function banner(n){
+           var k = -400 * Number(n);
+           $('#photo').animate({left:k},500);
+       }
+       //자동재생
+       n = 0;
+       function autotimer(){
+           if(n<3){
+               n++;
+           }else{
+               n = 0;
+           }
+           banner(n);
+           $('#btnBox li:eq('+n+') a').removeClass('on');
+           $('#btnBox li:eq('+n+') a').addClass('on');
+       }
+       setInterval('autotimer()',2000)
+
+       //#banner에 마우스 올리면 자동재생 멈춤 
+       $('#banner').mouseenter(function(){
+           clearInterval(auto);
+       }).mouseleave(function(){
+           auto = setInterval('autotimer()',2000);
+       })
+    </script>
+</body>
+</html>
