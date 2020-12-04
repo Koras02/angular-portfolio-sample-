@@ -10,15 +10,37 @@
         $(function(){
           //시작하면 퀵메뉴 왼쪽으로 나가기 
           $('#menu li').stop().animate({marginLeft:'-120px'},800);
+           
+          //첫메뉴 오른쪽으로 이동하기
+          $('#menu li').eq(0).animate({marginLeft:'-10px'},800); 
+
+          //첫메뉴 활성화
+          $('#menu li').removeClass('on').eq(0).addClass('on');
+          //맨위로 올라가기
+          $('html,body').animate({scrollTop:0},500);
 
         //   메뉴 클릭하면 해당 컨텐츠 이동
-          $('menu li').click(function(){
+          $('#menu li').click(function(){
             //   $('menu li').removeClass('on');
             //   $(this).addClass('on');
               $(this).addClass('on').siblings('li').removeClass('on');
               var i = $(this).index();
               var target = $('.contents>div').eq(i).offset().top;
               $('html,body').animate({scrollTop:target},500);
+          })
+
+          //스크롤 움직임에 따른 메뉴 활성화 
+          $(window).scroll(function(){
+            var sct = $(window).scrollTop();
+            $('.contents>div').each(function(){
+              var i = $(this).index(); 
+              if($(this).offset().top <= sct){
+              //선택된 메뉴 오른쪽으로 이동하기
+              $('#menu li').stop().animate({ marginLeft: '-120px' }, 400).eq(i).stop().animate({marginLeft:'-10px'},400);
+              //메뉴 활성화
+              $('#menu li').removeClass('on').eq(i).addClass('on');
+              }
+            })
           })
         })
     </script>
