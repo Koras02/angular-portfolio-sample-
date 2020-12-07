@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-migrate-3.3.0.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <style>
+        *{margin:0;padding:0;}
+        div{width:100%;height:100vh;background-color:yellow;}
+        div span{
+            font-size:50px;color:#fff;
+            position:relative;top:50%;left:50%;
+        }
+    </style>
+    <script>
+        $(function(){
+            var w = $('span').width()/2;
+            $('div>span').css({marginLeft:-w});
+            $('div').on('mousewheel',function(event,delta){
+                if(delta>0){ //마우스 휠 올렸을때
+                    $(this).css('background-color','red');
+                    $('span').text('마우스 휠을 올렸어요!')
+                }else{ //마우스 휠 내렸을 때
+                    $(this).css('background-color','purple');
+                    $('span').text('마우스 휠을 내렸어요!');
+                }
+                var w = $('span').width() / 2;
+                $('span').css({ marginLeft: -w });
+            })
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <span>마우스 휠</span>
+    </div>
+</body>
+</html>
