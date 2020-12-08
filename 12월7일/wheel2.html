@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-migrate-3.3.0.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <style>
+        *{margin:0;padding:0;}
+        div{width:100%;height:100vh;margin:auto;background-color:yellow;
+        background-size:cover;}
+    </style>
+    <script>
+        $(function(){
+         $('div').on('mousewheel',function(event,delta){
+             if(delta>0){  // 마우스 휠 올렸을때
+                var photo = 'url(images/bg1.jpg)';
+             }else{ //마우스 휠 내렸을때
+                var photo = 'url(images/bg2.jpg)';
+             }
+             $(this).css('background-image',photo);
+           })
+        })
+    </script>
+</head>
+<body>
+  
+</body>
+</html>

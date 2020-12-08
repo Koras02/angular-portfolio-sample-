@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-migrate-3.3.0.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <style>
+        *{margin:0;padding:0;}
+        div{    
+        width:100%;height:100vh;margin:auto;
+        background-color:yellow;
+        background-size:cover;
+        font:bold 240px/100vh arial;color:#fff;
+        text-align: center;
+        }
+    </style>
+    <script>
+        $(function(){
+         var n = 0;
+         $('div').text(n);
+         $('div').on('mousewheel',function(event,delta){
+             if(delta>0){  // 마우스 휠 올렸을때
+                n--;
+                if(n<0){
+                    n=0;
+                }
+                var photo = 'url(images/bg'+n+'.jpg)';
+             }else{ //마우스 휠 내렸을때
+                n++;
+                if(n>=5){
+                    n=4;
+                }
+                var photo = 'url(images/bg'+n+'.jpg)';
+             }
+             $(this).css('background-image',photo);
+             $(this).text(n);
+           })
+        })
+    </script>
+</head>
+<body>
+   <div></div>
+</body>
+</html>
